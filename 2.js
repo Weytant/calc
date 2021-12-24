@@ -22,6 +22,14 @@ function calc(number) {
           document.getElementById('sum').textContent = Number(number_one) - Number(number_two)
           document.getElementById('error').textContent = undefined
       }
+      else if(symbol == '*'){
+          document.getElementById('sum').textContent = Number(number_one) * Number(number_two)
+          document.getElementById('error').textContent = undefined
+      }
+      else if(symbol == '/'){
+          document.getElementById('sum').textContent = Number(number_one) / Number(number_two)
+          document.getElementById('error').textContent = undefined
+      }
   }
   else if(number_one !=undefined && symbol != undefined && number_two != undefined){
       number_one = number
